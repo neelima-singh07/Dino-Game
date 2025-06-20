@@ -1,0 +1,105 @@
+.game{
+    width:600px;
+    height:200px;
+    border:2px solid black;
+    margin:auto;
+    position: relative;
+    
+
+
+}
+.dino{
+    width:50px;
+    height:50px;
+    background-image: url("dino.png");
+    background-size: 50px 50px;
+    position:relative;
+    top:150px;
+    
+    
+}
+.jump{
+    animation: jump 0.3s linear;
+}
+/* animation  */
+@keyframes jump {
+    0% { top: 150px; }
+    30% { top: 130px; }
+    50% { top: 80px; }
+    80% { top: 130px; }
+    100% { top: 150px; }
+    
+}
+.cactus{
+    width:20px;
+    height:20px;
+    background-image: url("cactus2.png");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    position:absolute;
+    top:110px;
+    left :580px;
+    margin-top:70px;
+    margin-right:100px;
+    animation: block 3s linear infinite;
+    
+    
+}
+
+@keyframes block {
+    0% { left: 580px; }
+    100% { left: -20px; }
+
+
+}
+h1{
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+
+}
+p{
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease;
+
+}
+body{
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+    
+
+}
+
+
